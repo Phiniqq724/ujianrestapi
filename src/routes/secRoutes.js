@@ -4,8 +4,8 @@ const app = express()
 app.use(express.json());
 
 // Start Code Here
-const first = require("../controllers/firstController")
+const sec = require("../controllers/secController")
 
-app.get("/genjil/:number", first.bilangan)
+app.post("/minmax", sec.arrayBilangan)
 
 module.exports = app
